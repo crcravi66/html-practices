@@ -1,0 +1,42 @@
+h1
+{
+    color: rgb(41, 41, 46);
+    text-align: center;
+    font: weight 900px;
+    word-spacing: 2px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size:100px;
+    line-height: 5px;
+    text-shadow: 2px 2px magenta, 4px 4px rgb(6, 231, 44), 6px 6px rgb(238, 10, 10);
+}
+h4
+{
+    text-decoration: dashed;
+    font-size: 60px; 
+    text-align: center;
+    font-family: sans-serif;
+}
+h2
+{
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+    color: purple;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+    text-decoration:wavy;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(235, 13, 150);
+    font-family:'Indie Flower', cursive;
+    
+}
+p{
+    text-decoration:underline;
+    text-align: center;
+    font-weight:lighter;
+    font-size: 40px;
+    line-height: 1em;
+    word-spacing: 50px;
+}
