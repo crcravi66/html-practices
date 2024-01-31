@@ -1,3 +1,4 @@
+
 h1{
     font: 300 22px Times  ;
     margin: 30px 0 50px 50px;    
@@ -25,28 +26,28 @@ p{
     font:400 15px Verdana ;
     text-transform: capitalize;
 }
+.gallery{
+    padding: 16px;
+    }
 .picture img{
+    
     width: 100%;
     height: 340px;
-    display: inline-block;
     object-fit: cover;
-    
-}
+    }
 .picture {
-    width: 48%;
+   
+    width: 49%;
     display: inline-block;
-    min-width: 500px;
-    max-width: 800px;
     box-sizing: border-box;
-    padding: 25px;
+    padding: 16px;
     }
     .picture p{
         margin-top: 5px ;
-
     }
 .about{
     width: 400px;
-margin: 30px 100px ;
+    margin: 30px 100px ;
 }
 h4{
     font:500 20px verdana;
@@ -57,4 +58,116 @@ h4{
 span{
     font-size: 15px;
     display: block;
+}
+@media only screen and (max-width: 1000px){
+    h1{
+        font: 300 25px Times  ;
+    }
+  p
+  {
+    font:400 12px Verdana ;
+  }
+.gallery{
+    padding: 13px;
+}
+.picture img {
+    height: 300px;
+    object-fit: fill;
+}
+.about{
+    width: 400px;
+    margin: 30px 30px ;
+}
+.picture p{
+    margin-top: 5px ;
+}
+}
+@media only screen and (max-width:800px) {
+    h1{
+        font-size: 18px;
+    }
+    .header{
+        font-size: 8px;
+    }
+    .picture {
+        padding: 6px;
+    }   
+.picture img {
+    height: 250px;
+    object-fit: fill;
+}
+.about{
+    width: 400px;
+    margin: 30px 30px ;
+}
+}
+@media only screen and (max-width:600px){
+    h1{
+        font-size: 14px;
+        margin: auto 20px;
+        width: 200px;
+    }
+    h4{
+        font-size: 14px;  
+    }
+    p{
+       font:400 11px Verdana ;
+    }
+    ul{
+        padding: 0;
+    }
+    .picture{
+    width: 100%;
+ }
+ span {
+    font-size: 9px;
+ } 
+ .about{
+    margin: 20px;
+ } 
+}
+@media only screen and (max-width: 430px){
+    h1{
+        margin: 10px auto;
+        text-align: center;
+        font-size: 13px;
+        display: block;
+    }
+    .picture
+    {
+        width: 100%;
+        height: 80px;
+    }
+    .picture p{
+        font-size: 8px;
+    }
+    ul{
+        margin:3px;
+    }
+    li
+    {
+        font-size: 4px;
+    }
+    #main{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 20px;
+    }
+     .header{
+        margin: 0;
+        padding: 1px;
+     }   
+     h4{
+        font-size: 12px;
+        margin: 20px auto;
+     }   
+     .about{
+        margin: 0px;
+        width: auto;
+        padding: 0px 20px;
+     }
+     .about p{
+        font-size: 10px;
+     }
+     
 }

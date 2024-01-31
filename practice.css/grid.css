@@ -1,0 +1,17 @@
+
+.continer
+{  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 100px;
+}
+.continer2{
+    width:80%;
+    height: 500px; 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    margin: 50px auto;
+    display: grid;
+    background:linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9  );
+    grid-template: repeat(2,1fr)/repeat(5, minmax(100px, 200px));
+    gap: 10px 10px;
+}
