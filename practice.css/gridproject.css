@@ -47,38 +47,109 @@ h1{
         width:15px;
         height: 15px;
     }
-.navbar .bar{
+.bar1, .bar2, .bar3{
         background-color: black;
         border-radius:40px;
         width: 25px;
         margin: 1.5px;
         height: 4px;
-           }
+}
 .sidebar{
     display: none;
-}           
+}  
+.mobilenav{
+    width: 60px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    right: -160px;
+    top: 0;
+    background-color: white;
+    transition: all 0.6s ease-out;
+}  
+.opensidebar{
+    transform: translateX(-160px);
+}
+.mobilenav img {
+    width: 16px;
+    height: 16px;
+    margin: 9px 0;
+}
+.mobilenav a {
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 500;
+    margin: 11px 0;
+    text-decoration: none;
+}
+.mobilenav a:hover {
+    text-decoration:dashed;
+    }
+.animatebar1{
+    animation: flipbar1 0.6s ;
+    animation-fill-mode: forwards;
+}
+.animatebar2{
+    animation: fadbar2 0.6s ;
+    animation-fill-mode: forwards;
+}
+.animatebar3{
+    animation: flipbar3 0.6s ;
+    animation-fill-mode: forwards;
+}
+@keyframes flipbar1{
+    from{
+        transform: rotate(0deg);
+    }
+       to{
+        transform: rotate(45deg) translate(2px, 8px);
+    }
+}
+@keyframes fadbar2{
+        from{
+            transform: scalex(1);
+            opacity: 1;
+        }
+           to{
+            transform: scalex(0);
+            opacity: 0;
+        }
+}
+@keyframes flipbar3{
+    from{
+        transform: rotate(0deg) ; 
+    }
+       to{
+        transform: rotate(-45deg)  translate(2px, -8px);
+    }
+}
 section{
         padding: 5px 40px;
     }
-img{
+img
+   {
         width: 100%;
        height: 100%;
        object-fit: cover;
        transition: all 0.3s ease;
     }
-.continer{
+.continer
+    {
         width: 95%;
         margin: auto;
         display: grid;
         gap: 10px;    
         position: relative; 
-         
-}
+         }
 /* img:hover{
     filter: brightness(110%) contrast(110%);
 } */
 .first, .second, .third, .fourth, .fifth, .sixth, .seventh, .eightth, .nineth
-{
+   {
     position: relative;
     display: grid;
     &:hover .layout {
@@ -290,6 +361,7 @@ span{
     .topright{
         display: none;
     }
+
     .topleft a  {
         font: 700 0.3rem system-ui;
         box-shadow: -2px 2px 25px 5px rgb(228, 224, 224);
@@ -298,15 +370,17 @@ span{
     .continer{
         margin-top: 70px;
     }
-.sidebar{
+.sidebar 
+    {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-}
-.navbar{
+   }
+.navbar 
+   {
     margin: 0 ;
-    padding: 6px 28px;
+    padding: 6px 15px;
     box-sizing: border-box;
     width: 100%;
     background-color: white;
@@ -314,8 +388,9 @@ span{
     z-index: 3;
     top: 0;
     left: 0;
-}
-    .first{
+    }
+    .first 
+    {
         grid-column: 1/2;
         grid-row: 1/2;
     }
