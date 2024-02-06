@@ -167,6 +167,7 @@
 }
 .onoffbox+label{
     position: relative;
+    font: 600 1rem sans-serif;
 }
 .onoffbox + label::before{
     content: "";
@@ -174,7 +175,7 @@
     height: 1.3rem;
     background-color: rgb(212, 203, 203);
     position: absolute;
-    left: -120%;
+    left: -105%;
     top: 0;
     transition: 0.3s linear;
     border-radius: 25px;
