@@ -50,7 +50,7 @@
 body{
     width: 100%;
     margin: 0;
-    background-color: rgb(70, 70, 160);
+    background-color: var(--pg-white);
     color: var(--text-dark);
     font-family: var(--body-font);
     padding: var(--spacing-sm) 0 0 0    ;
@@ -164,7 +164,7 @@ p{
     font-family: var(--body-font);
     color: var(--primary-accent);  
     letter-spacing: 1.25px;
-    font-weight: bold;
+    font-weight: 600;
     transition: all 0.15s ease-in;
 }
 .secondary-button:hover{
@@ -176,13 +176,15 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+ 
+   }
     .arrowicon > img{
         transition: transform 0.25s ease;
     }
     .arrowicon:hover > img{
         transform: translateX(5px);
     }
+    
 
                                         /*navbar*/
 .heading{
@@ -191,6 +193,7 @@ p{
     align-items: center;
     width: 100%;
     max-width:var(--standard-with) ;
+    padding: 0 var(--spacing-md);
 }
 .menu{
     list-style: none;
@@ -198,8 +201,7 @@ p{
     text-decoration: none;
     justify-content: center;
     align-items: center;
-
-}
+    }
 .menu a{
     color: var(--text-lighter);
     margin: 0 var(--spacing-md);
@@ -207,3 +209,70 @@ p{
 .menu a:hover{
     text-decoration: underline;
 }
+.menu ul{
+    margin: 16px; 
+}
+.heading button{
+    background-color: transparent;
+}
+
+                                        /*mainsection*/
+
+.mainsection
+{
+    width: 100%;
+    max-width:var(--standard-with) ;
+    }
+.twocolumn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: flex-start;
+}  
+.leftcolumn
+{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 var(--spacing-md) 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+}
+.rightcolumn{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 var(--spacing-md) 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+}
+                                                                /*hero content*/
+main{
+    margin: var(--spacing-xl) 0;
+}
+.button-row{
+    display: flex;
+    flex-direction: row;
+    margin-top: var(--spacing-md);
+ }
+ .button-row button:nth-of-type(2){
+    margin-left:  var(--spacing-md);   
+    color: var(--purple-2);
+}
+.hero p{
+    max-width: 480px;
+}
+.phone-continer{
+    height: 564px;
+    align-items: end;
+}
+.phone-continer .phone{
+    height: 620px;
+    transform: translate(44px, -32px );
+}
+
+
