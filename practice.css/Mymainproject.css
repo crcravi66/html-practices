@@ -19,12 +19,15 @@
      --heading-font:"Anek Telugu",sans-serif;
 
 /*spacing*/
+    --spacing-vs:3px;
     --spacing-sm:8px;
     --spacing-md:16px;
     --spacing-lg:32px;
     --spacing-xl:64px;
     --spacing-2xl:128px;
     --spacing-3xl:240px;
+
+    --standard-with:1144px;
 
     --width-90:calc(100% - 90%);
     --width-80:calc(100% - 80%);
@@ -44,13 +47,19 @@
      --pg-white:white;
      --pg-light:rgb(222, 223, 224);
     }
-.body{
+body{
     width: 100%;
     margin: 0;
-    background-color: var(--pg-light);
+    background-color: rgb(70, 70, 160);
     color: var(--text-dark);
     font-family: var(--body-font);
+    padding: var(--spacing-sm) 0 0 0    ;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
 }
 h1{
     font-family: var(--heading-font);
@@ -103,6 +112,7 @@ a{
     color: var(--purple-1);
     font-weight: 500;
      text-decoration: none;
+     transition: all 0.50s ease;
 }
  a:hover{
     color: var(--primary-accent);
@@ -175,14 +185,25 @@ p{
     }
 
                                         /*navbar*/
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width:var(--standard-with) ;
+}
 .menu{
-    display: inline;
     list-style: none;
     display: flex;
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
 
 }
-.menu a {
+.menu a{
     color: var(--text-lighter);
-    margin: o var(--spacing-md);
+    margin: 0 var(--spacing-md);
+}
+.menu a:hover{
+    text-decoration: underline;
 }
