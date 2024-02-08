@@ -128,20 +128,29 @@ p{
 .secondary-text{
     font-size: var(--secondary-text-size);
     line-height: var(--secondary-text-height);
-    color: var(--text-gray);
+    color: var(--hover-pg-gray);
     letter-spacing: 0.25px;
 }
 .card{
     display: flex;
     flex-direction:column;
     justify-content: flex-start;
-    text-align: flex start;
+    align-items: flex-start;
     padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm ) 0;
 }
-.card-icon{
+.card .icon{
     height: 50px;
+    width: 50px;
     margin: 0 0 var(--spacing-sm) 0;
 }
+.card h3{
+    font-family: var(--heading-font);
+    font-weight: 500;
+    width: 100%;
+    margin: 0;
+    font-size: var(--h6-size);
+} 
+
 .subtittle,
 .subtittle2{
     color: var(--purple-1);
@@ -349,3 +358,37 @@ main{
     'phone dash dash'
     'phone dash dash'                  ;
     }
+
+                        /*INTEGERATION-SECTION*/
+.integeration-section {
+    color: var(--text-lighter);
+    background-color:var(--primary-accent);
+}
+.integeration-section .card-continer{
+    display: flex;
+    margin-top: var(--spacing-lg);
+}
+.integeration-section .card{
+    width: 50%;
+}
+.integeration-section .primary-button{
+    background-color: var(--blue-1);
+    color: var(--primary-accent);
+    margin-top: var(--spacing-md);
+}
+.integeration-section .primary-button:hover{
+    background-color: var(--pg-white);
+}
+.integeration-section .secondary-button{
+    color: var(--blue-1);
+    padding-left: var(--spacing-sm);
+}
+#codeimg{
+    max-width: 470px;
+    margin-bottom: var(--spacing-md) ;
+    border-radius: 20px;
+}
+#terminal{
+    max-width: 470px; 
+    border-radius: 20px;
+}
