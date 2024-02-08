@@ -130,7 +130,7 @@ p{
     line-height: var(--secondary-text-height);
     color: var(--hover-pg-gray);
     letter-spacing: 0.25px;
-}
+}   
 .card{
     display: flex;
     flex-direction:column;
@@ -391,4 +391,24 @@ main{
 #terminal{
     max-width: 470px; 
     border-radius: 20px;
+}
+
+                            /*swaping-section*/
+.swaping-section{
+    width: 100%;
+    padding: calc(var(--spacing-xl)*3) 0;
+}
+.swaping-section .cardcontiner2{
+    display: flex;
+    margin-top: var(--spacing-lg);
+}
+.cardcontiner2 .card{
+    width: 25%;
+    padding: 0 var(--spacing-md) 0 0;
+    margin: 0 var(--spacing-md) 0 0;
+    box-sizing: border-box;
+
+}
+.swaping-section .secondary-text{
+    color: var(--text-dark);
 }
