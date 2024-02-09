@@ -47,7 +47,7 @@
      --text-lighter:white;
      --hover-pg-gray:#6d7a88;
      --pg-white:white;
-     --pg-light:rgb(222, 223, 224);
+     --pg-light:#f7f9fc;
 
      --primary-gradient:linear-gradient(to right,#7000ff, #4776e6, rgb(88, 194, 255));
     }
@@ -395,11 +395,25 @@ main{
                                       /*INTEGERATION-SECTION*/
 .integeration-section {
     color: var(--text-lighter);
-    background-color:var(--primary-accent);
+   position: relative;
     display: flex;
     width: 100%;
     justify-content: center;
+    z-index: 1;
+    padding: calc(var(--spacing-lg) *5) 0;
 }
+.integeration-section::before{
+    content: "";
+    background-color:var(--primary-accent);
+    width: 100%;
+    height: 1100px;
+    position: absolute;
+    top: -32px;
+    left: 0;
+    transform: skewY(-10deg);   
+    z-index: -1;
+}
+
 .integeration-section .card-continer{
     display: flex;
     margin-top: var(--spacing-lg);
@@ -611,8 +625,51 @@ padding-right: var(--spacing-xl);
 
                         /*footer section*/
 
-                      
+.footer-section{
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    padding: calc((var(--spacing-lg)) *1.5) 0;
+}
+.footer-section .mainsection{
+    display: flex;
+}
+.footer-section .information{
+    width: 25%;
+    padding-top: 30px;
+}
+.footer-section h3{
+    font-size: var(--h6-size);
+    font-weight: 700;
+}
 
+.footer-section a{
+    color: var(--text-dark);
+    line-height: var(--spacing-lg);
+}
+.footer-section a:hover{
+    color: var(--purple-1);
+    text-decoration: underline;
+}
+#footer-logo{
+    margin-bottom: 22px;
+}
+.footer-section .information p img{
+    width:22px ;
+    
+}
+.footer-section .information .secondary-text {
+    align-items: center;
+    margin-top: 2px;
+    display: flex;
+    font-size: 16px;
+}
+.footer-section .information ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    line-height: 35px;
+}
 
 
 
