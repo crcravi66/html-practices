@@ -500,7 +500,7 @@ main{
 .virtual-continer{
     display: flex;
    justify-content: center;
-   padding-top: calc(var(--spacing-xl) *3);
+   padding: calc(var(--spacing-xl) *3) 0; 
 }
 .virtual-continer .primary-button{
     background-color: var(--purple-1);
@@ -577,6 +577,41 @@ padding-right: var(--spacing-xl);
 }
 
                                     /*getting-started-section*/
+.getting-started-section{
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-xl);
+}
+.getting-started-section .leftcolumn {
+    padding-right: var(--spacing-xl);
+}
+.getting-started-section .primary-button{
+    background-color: var(--purple-1);
+    color: var(--text-lighter);
+    margin-top: var(--spacing-md);
+}
+.getting-started-section .primary-button:hover{
+    background-color: var(--primary-accent);
+}
+.getting-started-section .card-continer .secondary-button{
+    color: var(--purple-2);
+}
+.getting-started-section .card-continer {
+
+    display: flex;
+    flex-direction: row;
+}
+.getting-started-section .card-continer .card{
+    width: 50%;
+    padding-right: var(--spacing-md) ;
+    margin-right: var(--spacing-sm);
+    box-sizing: border-box;
+}
+
+
+                        /*footer section*/
+
+                      
 
 
 
