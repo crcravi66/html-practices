@@ -221,7 +221,9 @@ p{
     width: 100%;
     max-width:var(--standard-with) ;
     padding: 0 var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
 }
+
 .menu{
     list-style: none;
     display: flex;
@@ -283,7 +285,23 @@ p{
     flex-direction: column;
     align-items: start;
 }
-                                                                /*hero content*/
+                                        /*animated gradient*/
+
+    #gradient-canvas{
+        content: "";
+        background:linear-gradient(to bottom, #333333, #dd1818);
+        width: 200%;
+        height: 970px;
+        position: absolute;
+        top: -600px;
+        left: -50%;
+        transform: skewY(-10deg);
+        z-index: -1;
+    }
+                                      
+
+                                       /*hero content*/
+
 main{
     margin: var(--spacing-xl) 0;
 }
@@ -320,6 +338,7 @@ main{
     display: flex;
     width: 100%;
     justify-content: center;
+  
 }
 .logo-box{
     display: grid;
@@ -337,7 +356,7 @@ main{
 
 .partner-platform{
     padding: var(--spacing-xl) 0;
-      
+    background-color: var(--pg-light);
 }
 .bluebutton{
     background-color: var(--purple-1);
@@ -356,6 +375,8 @@ main{
     display: flex;
     width: 100%;
     justify-content: center;
+    background-color: var(--pg-light);
+
 }
 #credit{
     grid-area: credit;
@@ -412,6 +433,16 @@ main{
     left: 0;
     transform: skewY(-10deg);   
     z-index: -1;
+}
+.integeration-section::after{
+    content: "";
+    background-color:var(--pg-light);
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;   
+    z-index: -2;
 }
 
 .integeration-section .card-continer{
@@ -477,12 +508,23 @@ main{
     display: flex;
     width: 100%;
     justify-content: center;
-    background-color: var(--primary-accent);
     color: var(--text-lighter);
     position: relative;
-    padding: calc(var(--spacing-xl) *2) 0;
+    padding: calc(var(--spacing-xl) *2) 0 0 0;
 
 }
+.global-section::before{
+    content: "";
+    background-color:var(--primary-accent);
+    width: 100%;
+    height: 1200px;
+    position: absolute;
+    top: -32px;
+    left: 0;
+    transform: skewY(-10deg);   
+    z-index: -1;
+}
+
 .global-section .cardcontiner{
      display: flex;
     margin: var(--spacing-2xl) 0;
@@ -514,7 +556,17 @@ main{
 .virtual-continer{
     display: flex;
    justify-content: center;
-   padding: calc(var(--spacing-xl) *3) 0; 
+   padding: calc(var(--spacing-xl) *2) 0;
+   position: relative; 
+}
+.virtual-continer::before{
+    background-color: var(--pg-white);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    z-index: -1;
+    top: 0;
 }
 .virtual-continer .primary-button{
     background-color: var(--purple-1);
