@@ -48,6 +48,8 @@
      --hover-pg-gray:#6d7a88;
      --pg-white:white;
      --pg-light:rgb(222, 223, 224);
+
+     --primary-gradient:linear-gradient(to right,#7000ff, #4776e6, rgb(88, 194, 255));
     }
 body{
     width: 100%;
@@ -313,7 +315,7 @@ main{
     transform: translate(44px, -32px );
 }
 
-                                /*partnre-continer*/
+                                       /*partnre-continer*/
 .partner-continer{
     display: flex;
     width: 100%;
@@ -390,7 +392,7 @@ main{
     'phone dash dash'                  ;
     }
 
-                        /*INTEGERATION-SECTION*/
+                                      /*INTEGERATION-SECTION*/
 .integeration-section {
     color: var(--text-lighter);
     background-color:var(--primary-accent);
@@ -427,7 +429,7 @@ main{
     border-radius: 20px;
 }
 
-                            /*swaping-section*/
+                                        /*swaping-section*/
 .swaping-section{
     width: 100%;
     padding: calc(var(--spacing-xl)*3) 0;
@@ -449,7 +451,7 @@ main{
     color: var(--text-dark);
 }
 
-                                /*global*/
+                                               /*global*/
 #global{
     max-width: calc(var(--spacing-2xl) *6.6);
     opacity: 25%;
@@ -492,3 +494,90 @@ main{
 .main{
     background-color: #0a2540;
 }
+
+                                          /*virtual section*/
+
+.virtual-continer{
+    display: flex;
+   justify-content: center;
+   padding-top: calc(var(--spacing-xl) *3);
+}
+.virtual-continer .primary-button{
+    background-color: var(--purple-1);
+    color: var(--text-lighter);
+    margin-top: var(--spacing-md);
+}
+.virtual-continer .primary-button:hover{
+    background-color: var(--primary-accent);
+}
+.virtual-continer .leftcolumn{
+height: 440px;
+padding-right: var(--spacing-xl);
+}
+.swipecard{
+    width: 570px;
+    height: 440px;
+    box-shadow: var(--standrad-boxshadow);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.swipecard .cardtop{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.swipecard .cardtop::before{
+    content: "";
+    width: 100%;
+    height: 150%;
+    background:var(--primary-gradient);
+    position: absolute;
+    top: -100px;
+    transform: skewY(-5deg);
+    z-index: 2;
+    
+}
+#swipe{
+    width: 338px;
+    height: 50px;
+    z-index: 3;
+}
+.swipecard .middle{
+    position: relative;
+    top: -16px;
+    z-index: 3;
+}
+.swipecard .middle img{
+    width: 75px;
+    position: absolute;
+    left: 8%;
+}
+.swipecard .middle img:nth-child(2){
+    position: absolute;
+    left: 100px;
+    top: -1px;
+}
+.swipecard .cardbottom{
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: var(--spacing-xl);
+}
+.swipecard .cardbottom .subtittle{
+    margin-top: var(--spacing-lg);
+}
+.swipecard .cardbottom p:nth-child(2){
+    width: 50%;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+                                    /*getting-started-section*/
+
+
+
+
