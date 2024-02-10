@@ -725,3 +725,206 @@ padding-right: var(--spacing-xl);
 
 
 
+@media only screen and (max-width:1144px){
+    .mainsection{
+        padding: var(--spacing-md);
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .logo-box img{
+        width: 100%;
+        height: auto;
+    }
+
+.integeration-section .leftcolumn{
+    width: 60%;
+}
+.integeration-section .rightcolumn{
+    width: 40%;
+}
+
+}
+
+                                        /*tabletsize*/
+
+@media only screen and (max-width:768px) {
+    :root{
+        --h1-size:64px;
+        --h1-height:72px;
+        --h3-size:34px;
+}
+            /*paltform*/
+
+.partner-platform .heading3{
+        width: 100%;
+       
+    }
+            /*integeration secton*/
+
+.integeration-section .card-continer{
+    flex-direction: column;
+}
+.integeration-section .card-continer .card{
+    width: 100%;
+}
+
+                                /*swaping-section*/
+.swaping-section .cardcontiner2 {
+    flex-wrap: wrap;
+}
+.swaping-section .cardcontiner2 .card{
+    width: 50%;
+    margin : var(--spacing-md) 0;
+}
+.swaping-section .cardcontiner2 .card .icon{
+   height: 35px;
+   width: 35px;
+}
+                            /*global section*/
+
+.global-section .cardcontiner{
+    flex-wrap: wrap;
+    margin: var(--spacing-xl) 0;
+}
+.global-section .cardcontiner .card{
+    width: 50%;
+    margin: var(--spacing-md) 0;
+}
+
+}
+
+                                          /*mobile size*/  
+
+
+@media only screen and (max-width:550px) {
+:root{
+        --h1-size:55px;
+        --h1-height:60px;
+        --h3-size:34px;
+        --h2-size:16px;
+}
+
+.logo-box{
+        grid-template-columns: 1fr 1fr;
+    }
+.twocolumn{
+    flex-direction: column;
+}
+.leftcolumn{
+    width: 100%;
+}
+.rightcolumn{
+    width: 100%;
+}
+.hero .phone-continer{
+    display: none;
+}
+                /*nav-bar*/
+.heading{
+    margin: 0 0 var(--spacing-lg) 0 ;
+}
+
+/*hero style*/
+main{
+    margin: 0;
+}
+
+
+
+
+
+                        /*integeratiom secion*/
+
+.integeration-section  .rightcolumn{
+    display: none;
+}
+.integeration-section .leftcolumn{
+    width: 100%;
+}
+
+                  /*swaping-section*/
+.swaping-section .cardcontiner2 {
+    flex-wrap: wrap;
+}
+.swaping-section .cardcontiner2 .card{
+    width: 100%;
+}
+
+                            /*global section*/
+
+.global-section .cardcontiner{
+    flex-wrap: wrap;
+    margin: var(--spacing-xl) 0;
+}
+.global-section .cardcontiner .card{
+    width: 100%;
+    margin: var(--spacing-sm) 0;
+ }
+ #global{
+    opacity: 10%;
+ }
+                            /*virtual section*/
+.virtual-continer .swipecard  {
+    width: 100%;
+    margin: var(--spacing-md) 0;
+}   
+.swipecard .cardbottom p:nth-child(2){
+    width: 100%;
+}
+.virtual-continer .swipecard  .cardtop{
+    height: 40%;
+}  
+#swipe{
+    width: 300px;
+}
+                            /*getting-started-section*/
+
+.getting-started-section .twocolumn{
+    align-items: center;
+
+}
+.getting-started-section .leftcolumn {
+    padding: 0;
+}
+.getting-started-section .rightcolumn {
+    padding: 0;
+}
+.getting-started-section .rightcolumn .card-continer{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.getting-started-section .rightcolumn .card{
+    width: 100%;
+    margin: var(--spacing-md) 0;
+}
+                            /*footer-section*/
+.footer-section .mainsection{
+    flex-wrap: wrap;
+}
+
+.footer-section .information{
+    width: 50%;
+    margin: var(--spacing-md) 0;
+}
+.footer-section .information a{
+    font-size: 12px;
+    margin: var(--spacing-sm) 0;
+}
+#footer-logo{
+    width: 70px;
+}
+.footer-section .information img{
+    width: 18px;
+}
+
+}
+
+
+html,body{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
