@@ -244,6 +244,9 @@ p{
 .heading button{
     background-color: transparent;
 }
+.sidebarright {
+    display: none;
+}
 
                                         /*mainsection*/
 
@@ -289,7 +292,7 @@ p{
 
     #gradient-canvas{
         content: "";
-        background:linear-gradient(to bottom, #333333, #dd1818);
+        background:linear-gradient(to left, #816161, #9b67fc, #2c4ba0c0,  #492d7c );
         width: 200%;
         height: 970px;
         position: absolute;
@@ -729,10 +732,21 @@ padding-right: var(--spacing-xl);
     .mainsection{
         padding: var(--spacing-md);
     }
+.hero .mainsection .leftcolumn{
+    width: 60%;
+}
+.hero .mainsection .rightcolumn{
+    width: 40%;
+}
 }
 
-@media only screen and (max-width:850px) {
-    .logo-box img{
+@media only screen and (max-width:870px) {
+  :root{
+    --h1-size:70px;
+    --h1-height:75px;
+
+}
+.logo-box img{
         width: 100%;
         height: auto;
     }
@@ -742,6 +756,11 @@ padding-right: var(--spacing-xl);
 }
 .integeration-section .rightcolumn{
     width: 40%;
+}
+                /*herocontent*/
+.phone-continer .phone{
+    height: 520px;
+    transform: translate(44px, -62px );
 }
 
 }
@@ -754,6 +773,35 @@ padding-right: var(--spacing-xl);
         --h1-height:72px;
         --h3-size:34px;
 }
+
+            /*navbar*/
+.heading img{
+    padding-left: var(--spacing-lg);
+}
+nav .menu, button{
+    display: none;
+}
+
+.bar1,.bar2,.bar3{
+    width: 24px;
+    height: 3px;
+    background-color:white;
+    border-radius: 25px;
+    margin-top: 3px;
+}
+
+.sidebarright{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: transparent;
+    padding: 7px 14px;
+    margin-right: 15px;
+    border-radius: 25px;
+   }
+
+
+
             /*paltform*/
 
 .partner-platform .heading3{
@@ -791,13 +839,26 @@ padding-right: var(--spacing-xl);
     width: 50%;
     margin: var(--spacing-md) 0;
 }
+            /*getting started section*/
+.getting-started-section{
+padding: var(--spacing-lg) var(--spacing-sm);
 
 }
+.getting-started-section .leftcolumn {
+    padding-right: var(--spacing-md);
+}
+.getting-started-section .card-continer{
+    flex-direction: column;
+}
+.getting-started-section .card-continer .card {
+    width: 100%;
 
+}
+}
                                           /*mobile size*/  
 
 
-@media only screen and (max-width:550px) {
+@media only screen and (max-width:560px) {
 :root{
         --h1-size:55px;
         --h1-height:60px;
@@ -925,6 +986,6 @@ main{
 html,body{
     width: 100%;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
