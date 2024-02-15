@@ -1,0 +1,161 @@
+body{ 
+    padding: 0;
+    margin: 0 ;
+}
+section{
+    /* border: 1px solid rgb(250, 115, 91); */
+    background-color:rgb(250, 115, 91) ;
+    width: 100%;
+    min-height:  90vh;
+    display: inline-block;
+    color: white;
+    margin: 0;
+}
+nav{
+    display: inline-block;
+}
+nav ul{
+    margin: 10px 1px;
+    padding-left:15px ;
+}
+nav ul li{
+ list-style: none;
+ display: inline-block ;
+ margin:5px 15px 5px 1px ;
+ font-weight: 600;
+ font-size: 0.7rem;
+}
+h1{
+    padding: 0.5rem 30rem;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    }
+button{
+     padding: 5px 10px ;
+    border: 1px solid white;
+    color:rgb(250, 115, 91) ; 
+     background-color: white ;
+     font-weight: 600;
+     width: 6rem;
+     text-align: center;
+}  
+#center code{
+    font-style: oblique;
+    letter-spacing: 0; 
+    font-size: 3.5rem;  
+}
+.hero-content{
+    padding: 0 15%;
+    }
+.tagline{
+     font:  lighter 2.8rem sans-serif  ;
+    letter-spacing: 0.1rem;
+    padding: 32px 0;
+ }  
+.important{ 
+    font-size: 1rem;
+}
+.important >p{
+    width: 48%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.important ul {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0;
+    list-style: none;
+}
+.important ul li{
+    width: 50%;
+    float: left;
+    font-size: 0.8rem;
+    padding: 2px 0;
+    }
+ 
+.center{
+    background-color: white;
+    color: black;
+    font-size: 0.9rem;
+}
+.blog{
+    padding: 80px 15%;
+    
+}
+.important .part2{
+    width: 50%;
+    float: left;
+}
+.heading{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.paragraph{
+    font-size: 0.8rem;
+}
+.date{
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: gray;
+}
+#content2{
+    border: 2px solid rgba(255, 182, 193, 0.795);
+    background-color: rgba(255, 182, 193, 0.795);
+    color: black;
+    border: none;
+}
+footer {
+background-color: black;
+color: white;
+    height: 20vh;
+    border: none;
+    font-size: 0.4rem;
+    
+}
+.footer{
+    text-align: center;
+}
+span{
+    display: block;
+}
+#heart{
+    height:0.4rem;
+    width: 0.4rem;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+.footer img{
+    width: 1rem;
+    height: 1rem;
+    padding: 2px;
+    margin-top: 8px;
+    
+    
+  
+}  
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+/* .clearfix {
+    display: inline-block;
+} */
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+

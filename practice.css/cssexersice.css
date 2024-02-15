@@ -1,0 +1,83 @@
+
+body{
+    background-color: aliceblue;
+} 
+h1{
+    text-shadow: 2px 2px 2px yellow,4px 4px 2px maroon;
+    text-align: center;
+    word-spacing: 20px;
+    line-height: 80px;
+    font:900 60px/2  Times;  
+    color: rgb(0, 17, 255);
+    background-color: bisque;
+    
+    
+}
+span{
+    text-decoration:underline;
+}
+#head {
+    text-decoration:underline dotted 3px ;
+}
+.main1 { 
+    
+    font-style: italic;
+    font:600 25px/1 monospace  ;
+}
+#first{
+    text-transform: capitalize;
+    font:100  20px/2  Verdana;
+    background-color: azure;
+}
+
+h2{
+    font-size:xx-large;
+    font-weight: 900;
+    text-decoration:wavy  underline cyan 3px;
+    background-color: blanchedalmond;
+    }
+#second{
+    font:600 18px/2 Arial ;
+    text-transform: capitalize;
+    background-color: azure;
+    }
+ .main 
+ {
+    
+    font:600 21px/2 Tahoma;
+    color:green;
+    text-decoration: none;
+ }  
+ a:visited{
+    color: rgb(255, 123, 0);
+ } 
+ a:hover{
+    color: red;
+    cursor:crosshair;
+     text-decoration:underline ;
+ }
+ h3{
+    font:900 20px/2 Verdana;
+    font-size:x-large;
+    text-decoration: dotted underline 2px magenta;
+    font-style: oblique;
+    }
+    ul{
+        background-color: antiquewhite;
+        font-size: 20px/2;
+        text-transform: uppercase;
+        font-weight: 900; 
+        text-align:justify;
+        list-style-type:square;
+        list-style-position: inside;
+
+    }
+
+ul a:visited 
+{
+    color: blue;
+}
+ul a:hover{
+    color: magenta;
+    cursor:grabbing;
+}
