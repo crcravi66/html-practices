@@ -1,0 +1,202 @@
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    border: 6px solid #CFD8DC ;
+    border-top-color: #0a59d8 ;
+    border-radius: 50%;
+    animation: 1s spin infinite  ease-in-out ;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*part 2*/
+.second{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right, #000428, #004e92);
+}
+.load span{
+    border: 2px solid rgb(223, 223, 245);
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 5px;    
+    
+}
+.load span:nth-child(1){
+    animation:jump 1s infinite ease-in-out ;
+}
+.load span:nth-child(2){
+    animation: 1s 0.333s jump infinite  ease-in-out;
+}
+.load span:nth-child(3){
+    animation: 1s 0.666s jump infinite ease-in-out  ;
+}
+@keyframes jump {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    30% {
+        transform: translateY(-20px) scale(1.3);
+    }
+    70%{
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+/*part3*/ 
+.before
+   {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    background:linear-gradient(to right, #ff2f2f, #f09819);
+   }
+.hoverbox
+   {
+    border: 3px solid #801414;
+    color: #801414 ;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font:600 1.2rem sans-serif;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+   }
+.hoverbox::before
+   {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #801414 ;
+    transform: translateX(-100%);
+    transition: all  0.7s ease;
+    z-index: -1;
+    }
+.hoverbox:hover::before
+{
+  transform: translateX(0%);
+}
+.hoverbox:hover
+   {
+    color: white;
+   }
+
+  /*part4*/
+.rainbow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    border: 3px solid whitesmoke ;
+    background:  conic-gradient(from 90deg at 50% 50%, rgba(255, 255, 0, 1) 0%, rgba(220, 103, 0, 1) 23%, rgba(233, 30, 99, 1) 40%, rgba(0, 188, 212, 1) 60%, rgba(29, 255, 3, 1) 80%, rgba(246, 255, 0, 1) 100%);
+    border-radius: 50%;
+    animation: 1.6s spin infinite linear;
+    box-shadow: 0px 0px 15px -1px black;
+    position: relative;
+}
+.circle::after{
+    content: "";
+    background-color: whitesmoke;
+    border: 3px solid whitesmoke;
+    box-shadow: inset 0px 0px 110px -60px rgba(0,0,0,0.8);
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    position:absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes spin  {
+    0%{
+        transform: rotate();
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*part 5*/
+.checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+}
+.onoffbox{
+    opacity: 0;    
+}
+.onoffbox+label{
+    position: relative;
+    font: 600 1rem sans-serif;
+}
+.onoffbox + label::before{
+    content: "";
+    width: 2.3rem;
+    height: 1.3rem;
+    background-color: rgb(212, 203, 203);
+    position: absolute;
+    left: -105%;
+    top: 0;
+    transition: 0.3s linear;
+    border-radius: 25px;
+}
+.onoffbox + label::after{
+     content: "";
+     width: 1.1rem;
+     height: 1.1rem;
+     background-color: white;
+     border-radius: 50%;
+     position: absolute;
+     z-index: 3;
+     top: 10%;
+     left: 0;
+     transform: translatex(-230%);
+     transition: 0.3s linear;
+     }
+.onoffbox:checked+label::before{
+    background-color: rgb(33, 165, 33);
+   
+}
+.onoffbox:checked+label::after{
+    transform: translateX(-150%);
+}

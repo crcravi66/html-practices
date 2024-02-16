@@ -1,0 +1,180 @@
+body{
+ background: radial-gradient(rgb(3, 100, 124), rgba(132, 194, 236, 0.877));
+ height: 100vh;
+ font-family: Arial, Helvetica, sans-serif;
+ margin: 0;
+ }
+ a{
+    text-decoration: none;
+    color: white;
+ }
+ .zero,.one,.two,.three,.four,.five,.six,.seven,.eight {
+    font-size: 6px;
+    background-color: rgb(3, 100, 124) ;
+    border: 1px solid white;
+    border-radius: 1px;
+    display: inline-block;
+    padding: 5px 12px;
+    position:relative;
+    box-shadow: 0 0  0.5px white;
+    }
+span {
+  border:1px solid white ; 
+  width: 7px;
+  height: 6px;
+  border-radius: 100%;
+  box-shadow: 0 0 0.5px white;
+  position: absolute;
+  padding: 1px;
+  font-size: 5px;
+  text-align: center;
+ }
+ .zero{
+    position: absolute;
+    left:0;    
+    top: 0;
+    }
+.zero span{
+    background-color: green ;
+    right: -3px;
+    bottom: -3px;
+}    
+.one{
+      position: absolute;
+      right :47%;    
+      top: 0;
+    }
+    .one span{
+        background-color: brown;
+        bottom: -4px;
+        left: 19px;
+    }
+    .two{
+    position: absolute;
+    right:0;    
+    top: 0;
+}
+.two span{
+    background-color: black;
+      left: -3px;
+      bottom: -3px;
+}
+.three{
+    position: absolute;
+    left:0;    
+    top: 44%;
+}
+.three span{
+    background-color: magenta;
+      right: -5px;
+      bottom: 4px;
+}
+.four{
+    position: absolute;
+    right:38%;    
+    top : 40%;
+}
+  .four span{
+      background-color:blue;
+      top: -5px;
+      left: 19px;
+}
+.five{
+    position: absolute;
+    right:0;    
+    top: 44%;
+}
+    .five span{
+        background-color: red;
+        left: -5px;
+        top: 3px;
+}
+.six{
+    position: absolute;
+    left:0;    
+    bottom: 0;
+}
+    .six span{
+        background-color: yellow;
+        right: -2px;
+        top: -3px;
+}
+.seven{
+    position: absolute;
+    right:calc(50% - 25px);    
+    bottom: 0;
+}
+    .seven span{
+        background-color: orange;
+        top: -5px;
+        left: 19px;
+}
+.eight{
+    position: absolute;
+    right:0;    
+    bottom: 0;
+}
+    .eight span{
+        background-color: lawngreen;
+        left: -4px;
+        top: -4px;
+}
+.center{
+    border: 2px solid navy;
+    width: 30%;
+    height: 100px;
+    position: absolute;
+    left: 34%;
+    top: 30%;
+}
+.first,.second,.third,.fourth {
+    font-size: 6px;
+    background-color: rgb(3, 100, 124) ;
+    border: 1px solid white;
+    border-radius: 1px;
+    display: inline-block;
+    padding: 5px 12px;
+    position:relative;
+    box-shadow: 0 0  0.5px white;
+    }
+
+    .first{
+        position: absolute;
+        right:37%;    
+        top: -9.5px;
+    }
+        .first span{
+            background-color: lawngreen;
+            left: 20px;
+            bottom: -6px;
+    }
+    .second{
+        position: absolute;
+        right:-25px;    
+        top: 40px;
+    }
+        .second span{
+            background-color: lawngreen;
+            left: -5px;
+            top: 4px;
+   }
+    .third{
+        position: absolute;
+        left :38%;    
+        bottom: -9.5px;
+    }
+        .third span{
+            background-color: lawngreen;
+            left: 20px;
+            top: -6px;
+    }
+    .fourth{
+        position: absolute;
+        left:-25px;    
+        top: 40px;
+    }
+        .fourth span{
+            background-color: lawngreen;
+            right: -5px;
+            top: 4px;
+    }

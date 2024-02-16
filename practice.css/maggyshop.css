@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(34, 32, 32);
+    min-block-size: 300px;
+}
+#maggi{
+    background-color: rgb(10, 250, 250);
+    border: 5px  blue solid;
+    width: 900px ;
+    padding: 10px 50px 10px 100px ;
+    margin: 50px auto;
+    box-shadow:3px 8px 22px 2px rgba(43,202,230,1) ;
+
+}
+h1,h2{
+    color: rgb(196, 8, 8);
+    font-weight: 800;
+    font-size: 50px;
+    
+}
+ul{
+    font-size: 25px;
+    font-weight: 700;
+}
+li{
+    color: purple;
+}
+ul span{
+    color: red;
+}
+.sizes li  
+{color: magenta;
+}
+input[type="email"]
+{
+    background-color: orange;
+    width: 200px;
+    height: 20px;
+    margin: 50px ;
+}
+a[href$=".org"] {
+    color: magenta;
+}
+#Submit
+{
+    background-color: rgb(115, 228, 243);  }
+    div{
+        border: 5px solid brown ;
+        height: 300px;
+        width: 300px;
+        padding: 50px 50px;
+        background-color:#40ab0a;
+        margin: 100px 50px;
+        display: inline-block;
+        box-shadow: 3px 4px 37px 17px rgba(114,148,10,1);
+
+    }
+form{
+    background-color: whitesmoke;
+    border: 3px solid white;
+    width: 600px ;
+    height: 400px;
+    padding: 30px 30px;
+    margin: 10px auto;
+}
+input[type="text"]{
+    width: 200px;
+    height: 20px;
+    margin: 50px ;
+}

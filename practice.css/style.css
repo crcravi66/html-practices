@@ -1,0 +1,50 @@
+body{
+    background-color: whitesmoke;
+    
+}
+h1{
+    font-size: 40px;
+    background-color: azure;
+    text-align: center;
+    color: rgb(8, 8, 8);
+    text-decoration:dashed line-through  rgb(214, 250, 11) 2px  ;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px gray;
+    text-shadow: 4px 4px 2px magenta, 6px 6px 3px yellowgreen, 8px 8px 5px blue ;
+}
+p{
+    color: #0b08ca;
+    text-transform:capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    word-spacing: 10px;
+    text-shadow: 2px 2px 2px  red, 4px 4px 4px rgba(200, 255, 0, 0.87);
+}
+
+ol
+{
+    background-position: 50%;
+    word-spacing: 10px;
+    text-align:left;
+    background-color: gray;
+
+}
+ul{
+    font-family: 'Times New Roman', Times, serif;
+    list-style-type: square;
+    list-style-position: inside;
+}
+#small{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(204, 9, 9);
+    text-shadow: -2px 2px 1px white,-4px 4px 3px rgb(182, 9, 173);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(72, 230, 24, 0.623);
+}
+
+    
+    
+     
+

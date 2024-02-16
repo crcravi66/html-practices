@@ -1,0 +1,99 @@
+#heading{
+    border: 1px solid rgb(104, 40, 206) ;
+    height: 300px;
+    text-align: center;
+    padding: 240px ;
+    background-color:rgb(104, 40, 206) ;
+    font-weight: lighter;
+    color: white;
+    min-width: 300px;
+    position:sticky;
+    }
+#heading p hr{ 
+   text-align: cente; 
+   width: auto; 
+}
+#date{
+    text-align: center;
+    font :  900 14px monospace ; 
+    margin: 40px;
+    
+}
+
+#center{
+    margin: 80px 240px;
+    padding: 30px;
+    font-weight: 600px;
+    min-width: 300px;
+}
+#uppercase{
+    text-transform: uppercase;
+    font: 600 13px italic;
+}
+#miniparagraph{
+    border-left: 2px solid orange;
+    padding-left: 30px;
+    font-size: 11px;
+    font-style: italic;
+    margin: 50px auto;
+    word-spacing: 3px;
+
+}
+#miniparagraph span{
+    display: block;
+    padding: 6px 35px;
+    font-weight: 900;
+}
+h3{
+    font: 600 ;
+    font-size: 30px;
+}
+#section p{
+    font-size: 16px;
+    font-weight: 900;
+}
+#section span{
+    color: red;
+    font: 500 18px bitter;
+}
+h4{
+    font-size: 20px;
+}
+footer{
+    border: 1px solid  rgb(104, 40, 206) ;
+    background-color: rgb(104, 40, 206) ;
+    height: 60px;
+     text-align: center;
+    
+}
+ul li{
+    display: inline;
+    font-size: 12px;
+    width: 300px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    margin: auto 20px;
+}
+ul li a:hover{
+    text-decoration: underline;
+    text-shadow: 6px 6px 6px rgba(235, 136, 106, 0.966);
+}
+.last {
+    margin-top: 40px;
+}
+#font {
+    font-size: 16px;
+    padding: 30px 260px;
+}
+#em{
+    font-size: 1.5em;
+}
+#font span{
+    color: red;
+    font: 500 20px bitter;
+}
+.rem{
+    font-size: 2rem;
+}

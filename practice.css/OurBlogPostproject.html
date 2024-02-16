@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="OurBlogPostproject.css">
+    <title>OurBlogPostproject</title>
+</head>
+<body>
+    <header>
+        <div id="heading">
+            <h1>A Blog Post</h1>
+            <p style= "font-size: 12px;">Typography is one of the most important elements of front end design and development in this exercise. we'll play around with some of the common css proporety to manage and style our fonts by making a nice blog post-like web page.   </p>
+        <hr style="margin: 30px;">
+        </div>
+        
+    </header>
+    <main>
+    <p id="date" ><time datetime="2050-12-31">12.31.2050 |</time> <Span style="color: red;">ALL ABOUT CSS BLOG</Span></p>
+    <div id="center">
+    <h2 style=" font-size: 45px;"> All About Typography</h2>
+        <p id="uppercase" >
+        headliness like this one ,are great ways to quickly capture the readeres attention, to give them a summary , intro, or other important information in a web page. you can use <span  style=" color: orangered;">text-transform:uppercase;</span> 
+        </p>
+         <p>
+            okay, now that we're done screaming in the headline in all caps (whlie you shoud do sparingly) - its time to chat more about other components of typography. you'll notce that we chose a nice serif font for our headings. and a nice sans-serif font for our body text. this international! serif font faces are generally considered pretty inaccessible as a body text style, since at smaller sizes its much more difficult to visually differntiate the characters form one another. at large font sizes such as those seen in most headings, serif fonts are considered fine. since the larger style makes it easier to see where serif chracter start and where they end.  </p>
+            <p>
+                 but wait! what if you want more than just normal text on your page ? another common things you might see in web pages are quotes. to make quote, we can use the blockquote elements and style it accordinngly. so it stands out a bit as a non-body text quote    
+        </p>
+        <p id="miniparagraph">
+             "This is a quote- you probably know that to at a glance since we gave  it some nice styling. pretty nice, huh? A great lesson in User expresion Design ,Where we take speacial care to implement our web page in a way that makes it and intutive for our user/readers. Differenting our different typogrphy visually makes information mush more orgined and eassier to digest for our users."  <span id="author">-A Wise person </span>
+             
+       </p>
+       <hr>
+    </div>
+    <div  id="section" style=" margin: 80px 260px ; min-width: 300px; ">
+    <h3>A New section</h3>
+        <p> 
+            And just like that, we've got a new section of conent seperate by a <span>hr</span> element (a "herisontal rule " or a divered) and a new heading. isn't putting content together fun?
+        </p>
+        <p>
+            Notice as well that when entered in the <span>H3</span> content, it was all lowercase. but now it's in a nise Title Case, where the first lettter of each wrod is  
+        </p>
+
+    <h4 style="font-size: 22px;"> Heading 4</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cumque id unde in asperiores error velit nihil repellendus dolore nesciunt, commodi, vero similique accusantium aperiam pariatur dicta, officia neque? Dicta!
+        </p>
+    <h5 style="font-size: 19px;">Heading 5</h5>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reprehenderit cupiditate modi quis ab nisi sint accusantium minus suscipit sed aut enim, architecto, consequatur tempora itaque dolorem blanditiis debitis quasi.
+        </p>
+    <h6 style="font-size: 17px;">Heading 6</h6>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit assumenda fuga vero dignissimos, quam earum expedita suscipit consequatur esse sed corporis adipisci obcaecati laborum debitis minus? Quibusdam nesciunt qui impedit?
+        </p>
+        </div>
+        <div id="font">
+    <h2 style="font-size: 35px;">common Font sizing Approaches
+    </h2>
+        <h4 >px <span>(pixels)</span></h4>
+            <p class="px">
+                pipxels are the simplest way to hard cide your font size. by defualt the browser sets the root font size to <span>16px</span>, but you can change the font size in the <span>boby</span> elelment by setting font-size to any number px
+            </p>
+    <h4>em</h4>
+       <p id="em">
+        em units size font relative to the parent element. for example, if  the <span>body</span>element is <span>16px</span>, and a nested <span>div</span> elements font size is set to <span>1.5em</span>, the browser will multiple will 16px x 1.5, resulting in <span>24px</span> font in the div.
+        </p>
+    <h4 >rem <span>(root em)</span></h4>
+        <p class="rem">
+            Root <span>em</span> units are similar to <span>em</span>. but they are relative to the root font size instead of the parent element of whatever is being styled. For example, if the root font size (the font size of the <span>body</span> element )is set to 16px, and we have a <span>p</span> element nested many layer down with a font-size set <span>2rem</span>, that paragraph will have 32px font size ever changes, this paragraph will also change accordingly 
+        </p>
+    <h3  style="font-size: 20px; ">Which one do I use?</h3>
+        <p class="last">
+            Great question! Generally, people try to stick to using <span>em</span> or <span>rem</span> over <span>px</span>, since they make responsive typography that scales up and down across different device widths much easier. Using <span>px</span> for your font sizes is not as dynamic, and you may find that writing media queries to update all the various element font sizes in pixels at different screen widths is not the most scalable approach to typography.
+        </p>
+        <p class="last">
+             Between <span>em</span> and <span>rem</span>, <span>rem</span> has a nice advantage of all elements being relative to one single root font value, where nested elements with parent/child font size dependencies can still be hard to manage with <span>em</span> units. When writing responsive styles, <span>rem</span> allows you to simply update the root font size at different screen sizes and all elements using <span>rem</span> units will adjust themselves accordingly creating a super easy-to-manage typography size system.
+            </p>
+        <p class="last">
+            In small projects you may not have an issues hard coding pixelage, but it's always important to understand the drawbacks of writing styles that may not be responsive or dynamic.
+        </p>
+    </div>
+</main>
+<footer>
+    <ul>
+        <li><a href="/privacy">Privacy and Policy</a></li>
+        <li><a href="/terms">Terms and Condition</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="contact">Contact Us</a></li>
+        <li><a href="/info">More Info</a></li>
+    </ul>
+</footer>
+</body>
+</html>
