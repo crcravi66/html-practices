@@ -746,6 +746,11 @@ padding-right: var(--spacing-xl);
     --h1-height:75px;
 
 }
+
+#gradient-canvas{
+     width: 200%;
+    height: 900px;
+}
 .logo-box img{
         width: 100%;
         height: auto;
@@ -799,8 +804,12 @@ nav .menu, button{
     margin-right: 15px;
     border-radius: 25px;
    }
+                 /*canvas*/   
 
-
+#gradient-canvas{
+    width: 200%;
+    height: 900px;
+}
 
             /*paltform*/
 
@@ -886,17 +895,41 @@ padding: var(--spacing-lg) var(--spacing-sm);
     margin: 0 0 var(--spacing-lg) 0 ;
 }
 
+
 /*hero style*/
 main{
     margin: 0;
 }
+#gradient-canvas{
+     width: 200%;
+    height: 800px;
+}
 
+                        /* hero section*/
 
-
-
+.hero .mainsection .leftcolumn{
+    width: 100%;
+}
+                        /*partner continer*/
+.partner-continer .logo-box{
+    margin: var(--spacing-sm);
+}
+                        /*partner-platform*/
+.partner-platform{
+    padding: 0;
+}
+                        /*grid-section*/
+.grid-section .gridimages{
+    padding: var(--spacing-md) 0;
+}
 
                         /*integeratiom secion*/
-
+.integeration-section {
+    padding: var(--spacing-md)  0;
+}
+.integeration-section::before {
+    height: 970px;
+}
 .integeration-section  .rightcolumn{
     display: none;
 }
@@ -905,8 +938,12 @@ main{
 }
 
                   /*swaping-section*/
+.swaping-section{
+    padding: calc(var(--spacing-md)*1) 0;
+}
 .swaping-section .cardcontiner2 {
     flex-wrap: wrap;
+    margin: 0;
 }
 .swaping-section .cardcontiner2 .card{
     width: 100%;
@@ -914,9 +951,12 @@ main{
 
                             /*global section*/
 
+.global-section {
+    padding: var(--spacing-sm)  0 0 0;
+}
 .global-section .cardcontiner{
     flex-wrap: wrap;
-    margin: var(--spacing-xl) 0;
+    margin: var(--spacing-md) 0;
 }
 .global-section .cardcontiner .card{
     width: 100%;
@@ -926,21 +966,48 @@ main{
     opacity: 10%;
  }
                             /*virtual section*/
+.virtual-continer{
+    padding: var(--spacing-md) 0;
+}
 .virtual-continer .swipecard  {
     width: 100%;
     margin: var(--spacing-md) 0;
 }   
+.virtual-continer .leftcolumn{
+    width: 100%;
+    padding: 0;
+}
 .swipecard .cardbottom p:nth-child(2){
     width: 100%;
 }
 .virtual-continer .swipecard  .cardtop{
-    height: 40%;
+    height: 55%;
 }  
+.swipecard{
+    height: 316px;
+}
+.swipecard .middle {
+    top: -40px;
+}
+.swipecard .middle img {
+    width: 60px;
+    bottom: -63px;
+}
+.swipecard .middle img:nth-child(2) {
+    left: 82px;
+}
 #swipe{
-    width: 300px;
+    width: 200px;
+    height: 30px;
+}
+.swipecard .cardbottom {
+    padding: var(--spacing-md) var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
+    height: 200px;
 }
                             /*getting-started-section*/
-
+.getting-started-section {
+    padding: 0 ;
+}
 .getting-started-section .twocolumn{
     align-items: center;
 
