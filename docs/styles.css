@@ -910,6 +910,9 @@ main{
 .hero .mainsection .leftcolumn{
     width: 100%;
 }
+.hero .mainsection  .button-row .arrowicon{
+    font-size:  11px;
+}
                         /*partner continer*/
 .partner-continer .logo-box{
     margin: var(--spacing-sm);
