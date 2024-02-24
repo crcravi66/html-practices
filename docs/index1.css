@@ -266,3 +266,36 @@ h1{
       color: white;
       border-color: aliceblue;
 }
+                                        /*button toolbar section*/
+
+.button-section{
+    padding: 70px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.button-section .toolbar-button .btn{
+    border-radius: 0;
+    border: 1.5px solid rgb(182, 179, 179);
+    font-size: 0.8rem;
+    padding: 15px 20px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+}
+.button-section .toolbar-button .btn:hover{
+    color:rgb(20, 105, 233) ;
+    border: 2px solid rgb(20, 105, 233);
+    background-color:white;
+}
+.button-section .toolbar-button .btn:focus{
+    background-color: rgb(182, 179, 179);
+    box-shadow: none;
+}
+.button-section .toolbar-button .btn svg{
+    height: 10px;
+    font-weight:900;
+
+}
