@@ -299,3 +299,46 @@ h1{
     font-weight:900;
 
 }
+                                    /*footer section*/
+footer{
+    width: 100%;
+    display: flex;
+   margin-bottom: 5rem;
+    flex-direction: row;
+    background-color: rgb(175, 175, 175);
+}
+footer .row-footer{
+    width: 50%;
+    text-align: start;
+    padding: 60px;
+    border: 0.2px solid rgb(190, 187, 187);
+}
+.footer .column-footer .footer-send{
+    margin-left: 0px;
+}
+
+footer .row-footer1 {
+    width: 50%;
+    text-align: start;
+    border: 0.2px solid rgb(190, 187, 187);
+}
+.contact{
+    height: 25%;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: row;
+    border: 0.2px solid rgb(190, 187, 187);
+}
+.contact h3{
+    font-size: 1rem;
+    font-weight: 700;
+    width: 10rem;
+}
+.contact svg{
+    margin: auto 15px;
+    width: 1.5rem;
+    height: 1.5em;
+}
+
+
+
