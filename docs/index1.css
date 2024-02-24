@@ -244,14 +244,14 @@ h1{
     line-height: 2.4rem;
     text-align: start;
 }
-.main-container-block .col .image-galery{
+.main-container-block .col .main-image-galery{
     overflow: hidden;
 }
-.main-container-block .col .image-galery img{
+.main-container-block .col .main-image-galery img{
     width: 100%;
     transition: transform 0.3s ease-out;
     }
-.main-container-block .image-galery img:hover{
+.main-container-block .main-image-galery img:hover{
     transform: scale(1.05);
 }
 .main-container-block .massive-button{
