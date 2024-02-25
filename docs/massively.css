@@ -1,0 +1,634 @@
+
+                                    /*navbar*/
+.navbar{
+    position: fixed;
+    top: 0.5;
+    width: 100%;
+    left: 0.5;
+    display: flex;
+    background-color: #3c4042;
+    justify-content: space-around;
+    z-index: 1;
+}
+.navbar p{
+    margin-right: 1rem;
+    display: inline-block;
+    line-height: 2.2rem;
+    height: 1rem;
+}
+.navbar  span{
+    font-size: 1.3rem; 
+    color: white;
+    font-weight: 600;
+}
+.nav-left{
+    display: flex;
+}
+.navbar .nav-left .btn-secondary a{
+    text-decoration: none;
+    color: white;
+}
+.navbar .nav-left .btn-secondary{
+    padding: 0.2rem 0.9rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    word-spacing: 2.5rem;
+    line-height: 2.2rem;
+}
+.navbar .nav-left .btn-secondary:hover{
+    background-color: #3c4042 ;
+}
+.navbar .exiticon{
+    margin-left: 20px;
+}
+.navbar .exiticon:hover{
+    color: rgb(198, 40, 40);
+    border-color: rgb(175, 44, 44);
+    box-shadow:  0px 0px 3px 0px #f8f6f6;
+}
+.navbar .nav-right .likethums{
+    background-color: rgb(34, 130, 240);
+    font-size: 0.8rem;
+    padding: 3px  8px;
+    font-weight: 500;
+    border-radius: 3px;
+    letter-spacing: 0.1rem;
+    width: 5rem;
+} 
+.navbar .nav-right .likethums  svg {
+    width: 16px;
+    float: left;
+    padding: auto 20px;
+}
+.navbar .nav-right{
+    margin: auto 20px;
+}
+
+                        /*hero*/
+.hero{
+    width: 100%;
+    height: 100%;
+   }
+                                /*massive section*/
+.massive-css{
+    word-spacing: 2rem;
+    color: rgb(255, 255, 255);
+    text-shadow:0 0 3px rgb(59, 54, 109);
+    padding: 4rem 6rem 0 6rem ;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+}
+h1{
+    margin: 0 0 50px 0;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+.massive-css p {
+    font-style: italic;
+    word-spacing: 0.3rem;
+    line-height: 3rem;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 25px;
+    text-align: center;
+}
+.massive-css p a{
+    color: white;
+    text-decoration:dotted;
+}
+.massive-css .downarrow svg {
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+.massive-css .downarrow svg:hover {
+    color: rgb(25, 185, 248);
+}
+                                          /*main-container*/
+.main-container {
+    background-color: rgb(226, 222, 222);
+    z-index: 1;
+    margin: 5rem;
+}
+.continer-massive{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+    padding: 100px;
+}
+.continer-massive-date{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+}
+.continer-massive h4{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+}
+.continer-massive hr{
+    width: 300px;
+    margin: 0 2rem;
+}
+.continer-massive h1{
+    margin: 4rem 0 1rem 0 ;
+    font-weight: 800;
+    font-size: 3.6rem;
+    line-height: 5rem;
+    letter-spacing: 3.6px; 
+}
+.continer-massive h1:hover{
+    color: rgb(12, 163, 223);
+}
+.continer-massive p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 30px 160px;
+    word-spacing: 0.5rem;
+    font-style: italic;
+    line-height: 2.5rem;
+}
+.continer-massive .image-galery {
+    overflow: hidden;
+}
+.continer-massive .image-galery img{
+    width: 100%;
+    transition: transform 0.3s ease-out;
+    }
+.continer-massive .image-galery img:hover{
+    transform: scale(1.05);
+}
+.continer-massive .massive-button{
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    margin-top: 5rem;
+    padding: 20px 60px;
+    color: rgb(32, 116, 32);
+   }
+.continer-massive .massive-button:hover{
+      color: white;
+      border-color: aliceblue;
+}
+                                /*main container block*/
+
+.main-container-block .row {
+   width: 100%;
+ }
+.main-container-block .row .col-6{
+    width: 50%;
+    padding: 30px;          
+    border: 0.2px solid rgb(214, 213, 213);
+}
+.main-container-block{
+    display:flex;
+    margin: 0 ;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+}
+.main-container-block h4{
+    font-size: 1rem;
+    margin-top:2rem ;
+    font-weight: 400;
+}
+.main-container-block hr{
+   display: none;
+}
+.main-container-block h1{
+    margin: 1rem 0 3rem 0 ;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    letter-spacing: 2px; 
+}
+.main-container-block h1:hover{
+    color: rgb(12, 163, 223);
+}
+.main-container-block p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    word-spacing: 0.5rem;
+    margin: 2rem auto;
+    line-height: 2.4rem;
+    text-align: start;
+}
+.main-container-block  .main-image-galery{
+    overflow: hidden;
+}
+.main-container-block  .main-image-galery img{
+    width: 100%;
+    transition: transform 0.3s ease-out;
+    }
+.main-container-block .main-image-galery img:hover{
+    transform: scale(1.05);
+}
+.main-container-block .massive-button{
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    margin: rem;
+    padding: 20px 40px;
+    color: rgb(32, 116, 32);
+   }
+   .main-container-block .massive-button:hover{
+      color: white;
+      border-color: aliceblue;
+}
+                                        /*button toolbar section*/
+.button-section{
+    padding: 70px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.button-section .toolbar-button .btn{
+    border-radius: 0;
+    border: 1.5px solid rgb(182, 179, 179);
+    font-size: 0.8rem;
+    padding: 15px 20px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+}
+.button-section .toolbar-button .btn:hover{
+    color:rgb(20, 105, 233) ;
+    border: 2px solid rgb(20, 105, 233);
+    background-color:white;
+}
+.button-section .toolbar-button .btn:focus{
+    background-color: rgb(182, 179, 179);
+    box-shadow: none;
+}
+.button-section .toolbar-button .btn svg{
+    height: 10px;
+    font-weight:900;
+}
+                                    /*footer section*/
+footer{
+    width: 100%;
+    display: flex;
+   margin-bottom: 5rem;
+    flex-direction: row;
+    background-color: rgb(175, 175, 175);
+}
+footer .row-footer{
+    width: 50%;
+    text-align: start;
+    padding: 60px;
+    border: 0.2px solid rgb(190, 187, 187);
+}
+.footer .column-footer .footer-send{
+    margin-left: 0px;
+}
+footer .row-footer1 {
+    width: 50%;
+    text-align: start;
+    border: 0.2px solid rgb(190, 187, 187);
+}
+.contact{
+    height: 25%;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: row;
+    border: 0.2px solid rgb(190, 187, 187);
+}
+.contact h3{
+    font-size: 1rem;
+    font-weight: 700;
+    width: 10rem;
+}
+.contact svg{
+    margin: auto 15px;
+    width: 1.5rem;
+    height: 1.5em;
+}
+                                /*body background*/
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #212931;
+    background-image: url("./massively/mountain-stone-grass-massive-wallpaper-preview.jpg"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+    background-size: cover;
+    filter: contrast(108%) brightness(100%);
+    background-repeat:  no-repeat;
+    background-position:right;
+    z-index: -1;
+}
+.fixed {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+                                                 /*responsive breakpoint*/
+
+                                        /*desktop section*/
+@media only screen and (max-width:992px){
+
+.navbar{
+    padding: 0.2rem;
+}
+.navbar .nav-left .btn-secondary{
+    padding: 0 0.7rem;
+    font-weight: 400;
+    font-size: 0.7rem;
+    word-spacing: 2.3rem;
+    line-height: 2rem;
+}   
+.navbar .nav-right .btn-secondary{
+    padding: 0.2rem 0.7rem;
+    font-size: 0.8rem;
+}  
+.navbar .nav-right .likethums{
+    font-size: 0.7rem;
+    padding: 3px  8px;
+    font-weight: 500;
+    width: 4rem;
+} 
+.navbar .nav-right .likethums  svg {
+    width: 15px;    
+}
+.navbar .nav-right{
+    margin: auto 10px;
+}
+                        /*massive*/
+.massive-css {
+    padding: 4rem 3rem 1rem 3rem;
+}
+.massive-css h1{
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+.massive-css p{
+    font-size: 1.4rem;
+    margin: 0;
+    line-height: 2rem;
+}
+.massive-css .downarrow svg {
+    width: 60px;
+    height: 60px;
+}
+                /*massive continer*/
+.main-container {
+    margin: 0 3rem;
+}            
+.continer-massive {
+    padding: 40px;
+}
+.continer-massive-date hr{
+    width: 120px;
+    margin: 10px;
+}
+.continer-massive h1{
+    margin: 3rem 0 1rem 0;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    letter-spacing: 2px;
+}
+.continer-massive .massive-button {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: 4rem;
+    padding: 18px 30px;
+ }
+.continer-massive p {
+   padding: 0;
+}
+                                 /*main container*/
+.main-container-block .row .col-6 {
+    padding: 10px;
+}
+.main-container-block h4 {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+.main-container-block p {
+    font-size: 0.8rem;
+    word-spacing: 0.3rem;
+    margin: 1.5rem auto;
+    line-height: 1.4rem;
+}
+.main-container-block .massive-button {
+    font-size: 0.8rem;
+    padding: 10px 25px;
+}
+.button-section .toolbar-button .btn {
+    font-size: 0.7rem;
+    padding: 10px 15px;
+    font-weight: 700;
+}
+                            /*footer section*/
+footer .row-footer {
+    padding: 20px;
+}
+.form-label {
+    font-size: 1rem;
+}
+.contact {
+    padding: 35px 20px;
+}
+.contact h3 {
+    font-size: 0.9rem;
+    width: 6rem;
+}
+.contact svg {
+    margin: auto 8px;
+    width: 1.3rem;
+}
+}
+                                            /*tablet size*/
+                          
+@media only screen and (max-width:768px){
+
+                        /*nav*/
+.navbar{
+    padding: 0.2rem;
+}
+.navbar p {
+    margin-right: 0.8rem;
+}
+.navbar .nav-left .btn-secondary{
+    padding: -0.2rem 0.5rem;
+    font-size: 0.6rem;
+    word-spacing: 2.3rem;
+    line-height: 1.8rem;
+}   
+.navbar .nav-right{
+    display: none;
+}
+                    /*massive container*/
+.massive-css p {
+    padding: 25px 5px;
+}
+.massive-css {
+    padding: 4rem 1rem 1rem 1rem;
+}   
+
+                        /*main content*/
+.main-container {
+    margin: 0 1rem;
+}
+.continer-massive {
+    padding: 50px;
+}
+.continer-massive {
+    padding: 60px 2px;
+}
+.main-container-block .row .col-6{
+    min-width: 100%;
+    padding: 60px;
+}
+                        /*footer section*/
+footer {
+    flex-direction: column;
+}
+footer .row-footer {
+    width: 100%;
+}
+footer .row-footer1 {
+    width: 100%;
+}
+footer .row-footer {
+    padding: 40px 200px 40px 30px;
+}
+.contact-section{
+    width: 100%;
+    display: flex;
+}
+.contact {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 20px 10px;
+}
+.contact svg {
+    margin: 10px 15px;
+    width: 1.2rem;
+}
+}
+                                       /* mobile size*/
+
+@media only screen and (max-width:576px){
+
+                /*nav bar*/
+.navbar>.container-fluid{
+    justify-content: center;
+}
+.navbar .nav-left .btn-group{
+    display: none;
+}
+                    /*masssive setion*/
+.massive-css {
+    padding: 6rem 0;
+    min-height: auto;
+}
+.massive-css h1 {
+    margin-bottom: 5px;
+    font-size: 3.4rem;
+}
+.massive-css p {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 25px 30px;
+}
+.massive-css .downarrow svg {
+    width: 50px;
+    height: 50px;
+    margin-top: 1rem;
+}
+                    /*massive main continer*/
+.continer-massive {
+    padding: 35px 12px;
+}
+.continer-massive-date hr {
+    width: 70px;
+}
+.continer-massive h4 {
+    font-size: 0.8rem;
+}
+.continer-massive h1 {
+    margin: 2rem 0 1rem 0;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    letter-spacing: 2px;
+}
+.continer-massive p {
+    font-size: 0.9rem;
+    word-spacing: 0.1rem;
+    line-height: 1.3rem;
+}
+.continer-massive .massive-button {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    padding: 10px 20px;
+}
+.main-container-block .row .col-6 {
+    padding: 20px;
+}
+                         /*button section*/
+.button-section {
+    padding: 30px 20px;
+    width: 100%;
+}   
+.button-section .toolbar-button .btn {
+    font-size: 0.5rem;
+    padding: 5px 8px; 
+}
+                       /* footer section*/
+footer .row-footer {
+    padding: 30px 20px ;
+}
+.column-footer .btn{
+    font-size: 0.8rem;
+    line-height: 1.3;
+    padding: 0.275rem 0.45rem;
+}
+.form-label {
+    font-size: 0.8rem;
+}
+.contact {
+    padding: 20px 30px;
+}
+.contact span{
+    font-size: 0.8rem;
+}
+.contact-section{
+    padding-bottom: 30px;
+}
+.contact-section {
+     display: block;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
