@@ -1,15 +1,4 @@
 
-
-body{
-    background-image: url(assets1/pic06.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-   z-index: -1;
-}
                                     /*navbar*/
 .navbar{
     position: fixed;
@@ -32,6 +21,9 @@ body{
     color: white;
     font-weight: 600;
 }
+.nav-left{
+    display: flex;
+}
 .navbar .nav-left .btn-secondary a{
     text-decoration: none;
     color: white;
@@ -41,7 +33,6 @@ body{
     font-weight: 500;
     font-size: 0.9rem;
     word-spacing: 2.5rem;
-  
     line-height: 2.2rem;
 }
 .navbar .nav-left .btn-secondary:hover{
@@ -49,7 +40,6 @@ body{
 }
 .navbar .exiticon{
     margin-left: 20px;
-    
 }
 .navbar .exiticon:hover{
     color: rgb(198, 40, 40);
@@ -69,28 +59,22 @@ body{
     width: 16px;
     float: left;
     padding: auto 20px;
-    
 }
 .navbar .nav-right{
     margin: auto 20px;
 }
 
-
-
                         /*hero*/
 .hero{
-   
     width: 100%;
     height: 100%;
-    filter: contrast(106%) brightness(102%);
-    
-}
-
+   }
+                                /*massive section*/
 .massive-css{
     word-spacing: 2rem;
     color: rgb(255, 255, 255);
     text-shadow:0 0 3px rgb(59, 54, 109);
-    padding: 4rem 4rem 6rem;
+    padding: 4rem 6rem 0 6rem ;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -124,12 +108,10 @@ h1{
     color: rgb(25, 185, 248);
 }
                                           /*main-container*/
-
 .main-container {
     background-color: rgb(226, 222, 222);
     z-index: 1;
     margin: 5rem;
-   
 }
 .continer-massive{
     display:flex;
@@ -148,7 +130,6 @@ h1{
 .continer-massive h4{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.2rem;
-
 }
 .continer-massive hr{
     width: 300px;
@@ -174,7 +155,6 @@ h1{
 }
 .continer-massive .image-galery {
     overflow: hidden;
-   
 }
 .continer-massive .image-galery img{
     width: 100%;
@@ -199,15 +179,12 @@ h1{
 
 .main-container-block .row {
    width: 100%;
- 
-}
-.main-container-block .row .col {
+ }
+.main-container-block .row .col-6{
     width: 50%;
-    min-width: 50%;
-    padding: 30px;
+    padding: 30px;          
     border: 0.2px solid rgb(214, 213, 213);
 }
-
 .main-container-block{
     display:flex;
     margin: 0 ;
@@ -244,10 +221,10 @@ h1{
     line-height: 2.4rem;
     text-align: start;
 }
-.main-container-block .col .main-image-galery{
+.main-container-block  .main-image-galery{
     overflow: hidden;
 }
-.main-container-block .col .main-image-galery img{
+.main-container-block  .main-image-galery img{
     width: 100%;
     transition: transform 0.3s ease-out;
     }
@@ -267,7 +244,6 @@ h1{
       border-color: aliceblue;
 }
                                         /*button toolbar section*/
-
 .button-section{
     padding: 70px 20px;
     width: 100%;
@@ -297,7 +273,6 @@ h1{
 .button-section .toolbar-button .btn svg{
     height: 10px;
     font-weight:900;
-
 }
                                     /*footer section*/
 footer{
@@ -316,7 +291,6 @@ footer .row-footer{
 .footer .column-footer .footer-send{
     margin-left: 0px;
 }
-
 footer .row-footer1 {
     width: 50%;
     text-align: start;
@@ -339,6 +313,322 @@ footer .row-footer1 {
     width: 1.5rem;
     height: 1.5em;
 }
+                                /*body background*/
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #212931;
+    background-image: url("./massively/mountain-stone-grass-massive-wallpaper-preview.jpg"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+    background-size: cover;
+    filter: contrast(108%) brightness(100%);
+    background-repeat:  no-repeat;
+    background-position:right;
+    z-index: -1;
+}
+.fixed {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+                                                 /*responsive breakpoint*/
+
+                                        /*desktop section*/
+@media only screen and (max-width:992px){
+
+.navbar{
+    padding: 0.2rem;
+}
+.navbar .nav-left .btn-secondary{
+    padding: 0 0.7rem;
+    font-weight: 400;
+    font-size: 0.7rem;
+    word-spacing: 2.3rem;
+    line-height: 2rem;
+}   
+.navbar .nav-right .btn-secondary{
+    padding: 0.2rem 0.7rem;
+    font-size: 0.8rem;
+}  
+.navbar .nav-right .likethums{
+    font-size: 0.7rem;
+    padding: 3px  8px;
+    font-weight: 500;
+    width: 4rem;
+} 
+.navbar .nav-right .likethums  svg {
+    width: 15px;    
+}
+.navbar .nav-right{
+    margin: auto 10px;
+}
+                        /*massive*/
+.massive-css {
+    padding: 4rem 3rem 1rem 3rem;
+}
+.massive-css h1{
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+.massive-css p{
+    font-size: 1.4rem;
+    margin: 0;
+    line-height: 2rem;
+}
+.massive-css .downarrow svg {
+    width: 60px;
+    height: 60px;
+}
+                /*massive continer*/
+.main-container {
+    margin: 0 3rem;
+}            
+.continer-massive {
+    padding: 40px;
+}
+.continer-massive-date hr{
+    width: 120px;
+    margin: 10px;
+}
+.continer-massive h1{
+    margin: 3rem 0 1rem 0;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    letter-spacing: 2px;
+}
+.continer-massive .massive-button {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: 4rem;
+    padding: 18px 30px;
+ }
+.continer-massive p {
+   padding: 0;
+}
+                                 /*main container*/
+.main-container-block .row .col-6 {
+    padding: 10px;
+}
+.main-container-block h4 {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+.main-container-block p {
+    font-size: 0.8rem;
+    word-spacing: 0.3rem;
+    margin: 1.5rem auto;
+    line-height: 1.4rem;
+}
+.main-container-block .massive-button {
+    font-size: 0.8rem;
+    padding: 10px 25px;
+}
+.button-section .toolbar-button .btn {
+    font-size: 0.7rem;
+    padding: 10px 15px;
+    font-weight: 700;
+}
+                            /*footer section*/
+footer .row-footer {
+    padding: 20px;
+}
+.form-label {
+    font-size: 1rem;
+}
+.contact {
+    padding: 35px 20px;
+}
+.contact h3 {
+    font-size: 0.9rem;
+    width: 6rem;
+}
+.contact svg {
+    margin: auto 8px;
+    width: 1.3rem;
+}
+}
+                                            /*tablet size*/
+                          
+@media only screen and (max-width:768px){
+
+                        /*nav*/
+.navbar{
+    padding: 0.2rem;
+}
+.navbar p {
+    margin-right: 0.8rem;
+}
+.navbar .nav-left .btn-secondary{
+    padding: -0.2rem 0.5rem;
+    font-size: 0.6rem;
+    word-spacing: 2.3rem;
+    line-height: 1.8rem;
+}   
+.navbar .nav-right{
+    display: none;
+}
+                    /*massive container*/
+.massive-css p {
+    padding: 25px 5px;
+}
+.massive-css {
+    padding: 4rem 1rem 1rem 1rem;
+}   
+
+                        /*main content*/
+.main-container {
+    margin: 0 1rem;
+}
+.continer-massive {
+    padding: 50px;
+}
+.continer-massive {
+    padding: 60px 2px;
+}
+.main-container-block .row .col-6{
+    min-width: 100%;
+    padding: 60px;
+}
+                        /*footer section*/
+footer {
+    flex-direction: column;
+}
+footer .row-footer {
+    width: 100%;
+}
+footer .row-footer1 {
+    width: 100%;
+}
+footer .row-footer {
+    padding: 40px 200px 40px 30px;
+}
+.contact-section{
+    width: 100%;
+    display: flex;
+}
+.contact {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 20px 10px;
+}
+.contact svg {
+    margin: 10px 15px;
+    width: 1.2rem;
+}
+}
+                                       /* mobile size*/
+
+@media only screen and (max-width:576px){
+
+                /*nav bar*/
+.navbar>.container-fluid{
+    justify-content: center;
+}
+.navbar .nav-left .btn-group{
+    display: none;
+}
+                    /*masssive setion*/
+.massive-css {
+    padding: 6rem 0;
+    min-height: auto;
+}
+.massive-css h1 {
+    margin-bottom: 5px;
+    font-size: 3.4rem;
+}
+.massive-css p {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 25px 30px;
+}
+.massive-css .downarrow svg {
+    width: 50px;
+    height: 50px;
+    margin-top: 1rem;
+}
+                    /*massive main continer*/
+.continer-massive {
+    padding: 35px 12px;
+}
+.continer-massive-date hr {
+    width: 70px;
+}
+.continer-massive h4 {
+    font-size: 0.8rem;
+}
+.continer-massive h1 {
+    margin: 2rem 0 1rem 0;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    letter-spacing: 2px;
+}
+.continer-massive p {
+    font-size: 0.9rem;
+    word-spacing: 0.1rem;
+    line-height: 1.3rem;
+}
+.continer-massive .massive-button {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    padding: 10px 20px;
+}
+.main-container-block .row .col-6 {
+    padding: 20px;
+}
+                         /*button section*/
+.button-section {
+    padding: 30px 20px;
+    width: 100%;
+}   
+.button-section .toolbar-button .btn {
+    font-size: 0.5rem;
+    padding: 5px 8px; 
+}
+                       /* footer section*/
+footer .row-footer {
+    padding: 30px 20px ;
+}
+.column-footer .btn{
+    font-size: 0.8rem;
+    line-height: 1.3;
+    padding: 0.275rem 0.45rem;
+}
+.form-label {
+    font-size: 0.8rem;
+}
+.contact {
+    padding: 20px 30px;
+}
+.contact span{
+    font-size: 0.8rem;
+}
+.contact-section{
+    padding-bottom: 30px;
+}
+.contact-section {
+     display: block;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
