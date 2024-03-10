@@ -23,3 +23,32 @@ function clickFunc(){
 function hoverHere(){
     document.querySelector("#addevent").innerHTML += "hover here <br>";
 }   
+
+
+                    // background change button
+
+const backgroundButton = document.querySelector('#change-bg-color')
+const h1 = document.querySelector('.rgb-color');
+
+backgroundButton.addEventListener('click', function(){
+    const rgbColor = randomColor ();
+    const bG = document.querySelector('.bg-change');
+    bG.style.backgroundColor = rgbColor ;
+    h1.innerText = rgbColor ;
+})
+
+const randomColor = () => {
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+   return`rgb(${r}, ${g}, ${b})`;
+ }
+
+                    //   key event
+
+const keyEvent = document.querySelector('#keyEvent');
+keyEvent.addEventListener('keydown', function(e){
+    console.log(e.key)
+    console.log(e.code)
+
+})
