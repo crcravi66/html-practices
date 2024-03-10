@@ -52,3 +52,49 @@ keyEvent.addEventListener('keydown', function(e){
     console.log(e.code)
 
 })
+
+                    // form event & preventDefault
+
+const form = document.querySelector('#prevent-default')
+const input = document.querySelector('#add-list')
+const list = document.querySelector('#listers')
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const addListed = input.value;
+    const newLi = document.createElement("li");
+    newLi.innerText = addListed;
+    list.append(newLi);
+    input.value = "";
+
+})
+
+                    // "orignal version" form event & preventDefault
+
+const form2 =document.querySelector('#tweetform')
+const tweetContainer = document.querySelector('#Tweets')
+tweetform.addEventListener('submit', function(e){
+    e.preventDefault();
+
+   // const username = tweetform.elements.username.value;
+   // const tweets = tweetform.elements.tweet.value;
+    const usernameinput = tweetform.elements.username;
+    const tweetsinput = tweetform.elements.tweet;
+    addtweet(usernameinput.value, tweetsinput.value)
+    usernameinput.value = '';
+    tweetsinput.value = '';
+})
+const addtweet = (username, tweets) => {
+    const newtweet = document.createElement("LI");
+    const btag = document.createElement("b");
+    btag.append(username)
+    newtweet.append(btag);
+    newtweet.append(` - ${tweets}`)
+    tweetContainer.append(newtweet);
+}
+
+
+
+
+
+
+
