@@ -210,50 +210,49 @@ let totalPrice = prices.reduce((total, price) => {
 //           console.log(`not a num`);
 //         }
 
-
-let passwod = prompt("enter a password");
-if (passwod.length >= 6 && passwod.indexOf(" ") === -1) {
-          console.log("good job valid password")
-    }
-     else if (passwod.length < 6 && passwod.indexOf(" ") === -1){
-      console.log("low password and no insert space")
-    }
-    else if (passwod.length >= 6 ) {
-    console.log("low password ");
-    } 
-    else{
-    console.log("another")
-    }
+// let passwod = prompt("enter a password");
+// if (passwod.length >= 6 && passwod.indexOf(" ") === -1) {
+//           console.log("good job valid password")
+//     }
+//      else if (passwod.length < 6 && passwod.indexOf(" ") === -1){
+//       console.log("low password and no insert space")
+//     }
+//     else if (passwod.length >= 6 ) {
+//     console.log("low password ");
+//     } 
+//     else{
+//     console.log("another")
+//     }
    
-const dateNum = parseInt(prompt("Enter the day num for 1 to 7"));
-switch (dateNum) {
-  case 1 :
-    console.log("Week started day is  Monday ");
-    break;
-  case 2 :
-    console.log("This is Tuseday");
-    break;
-  case 3 :
-    console.log("Wednesday");
-    break;
-  case 4 :
-    console.log("Thursday");
-    break;
-  case 5 :
-    console.log("Friday");
-    break;
-  case 6 :
-    console.log("saturday");
-    break;
-  case 7 :
-    console.log("Happy Sunday");
-  }
+// const dateNum = parseInt(prompt("Enter the day num for 1 to 7"));
+// switch (dateNum) {
+//   case 1 :
+//     console.log("Week started day is  Monday ");
+//     break;
+//   case 2 :
+//     console.log("This is Tuseday");
+//     break;
+//   case 3 :
+//     console.log("Wednesday");
+//     break;
+//   case 4 :
+//     console.log("Thursday");
+//     break;
+//   case 5 :
+//     console.log("Friday");
+//     break;
+//   case 6 :
+//     console.log("saturday");
+//     break;
+//   case 7 :
+//     console.log("Happy Sunday");
+//   }
 
-  const inventory = [
-  { name: "apples", quantity: 2 },
-  { name: "bananas", quantity: 0 },
-  { name: "cherries", quantity: 5 },
-];
+//   const inventory = [
+//   { name: "apples", quantity: 2 },
+//   { name: "bananas", quantity: 0 },
+//   { name: "cherries", quantity: 5 },
+// ];
 
 // function isCherries(fruit) {
 //   return fruit.quantity === 5;
@@ -262,5 +261,49 @@ switch (dateNum) {
 // console.log(inventory.find(isCherries));
 // { name: 'cherries', quantity: 5 }
 // let fruit = 
-const names = inventory.find(({name}) => name === prompt("Enter fruit name"));
-console.log(names)
+// const names = inventory.find(({name}) => name === prompt("Enter fruit name"));
+// console.log(names)
+
+
+
+// let students =[
+//   ['arun', 'ravi','ram'],
+//   ['jeggi', 'shantheep', 'hari'],
+//   ['tom', 'siva', 'mathavan', 'bharathi'],
+//   ['raj', 'subbhu']
+// ];
+
+
+// for (let i = 0; i <= students.length; i++){
+//   console.log(` groups = ${i + 1}`);
+//   let studentsNames = students[i];
+//     for (let j = 0; j <= studentsNames.length; j++){
+//       console.log(`#${j} : ${studentsNames[j]}`)
+//     } 
+//}
+
+let studentsMarks = {
+  arun : 88,
+  ram : 89,
+  jarunk: 78,
+  shandtheep : 75,
+  hari :86,
+  bharthi : 65,
+  siva : 75,
+  raj : 97,
+  subhbhu : 98,
+  mathavan : 68,
+}
+let avg = Object.values(studentsMarks);
+let total = 0 ;
+for(marks in studentsMarks){
+  console.log(`${marks} : ${studentsMarks[marks]}`)
+  total += studentsMarks[marks]; 
+}
+console.log(`Total : ${total}`);
+console.log(`AVG :${total / avg.length}`) 
+
+
+
+
+
