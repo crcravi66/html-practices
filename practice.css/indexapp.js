@@ -76,7 +76,7 @@ tweetform.addEventListener('submit', function(e){
     e.preventDefault();
 
    // const username = tweetform.elements.username.value;
-   // const tweets = tweetform.elements.tweet.value;
+   // const tweets = tweetform.elements.tweet.value;            (OR)
     const usernameinput = tweetform.elements.username;
     const tweetsinput = tweetform.elements.tweet;
     addtweet(usernameinput.value, tweetsinput.value)
@@ -91,10 +91,20 @@ const addtweet = (username, tweets) => {
     newtweet.append(` - ${tweets}`)
     tweetContainer.append(newtweet);
 }
+                // Event declaration
+tweetContainer.addEventListener('click',function(e){
+    e.target.nodeName === 'LI' && e.target.remove();
+})
 
 
+        // input & change-Event
 
+const input3 = document.querySelector('#input-change-Event')
+let head = document.querySelector('#h1-change-Event')
 
+input3.addEventListener('input', function(e){
+    head.innerText = input3.value
+})
 
 
 
