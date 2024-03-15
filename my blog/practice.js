@@ -117,32 +117,31 @@ let maximum = parseInt(prompt("Welcome enter your max num :"));
     console.log("you got it")
   }*/
  
-/*
-  let input = prompt("what do you like to do");
-  const todos = ['collect chicken eggs', 'clean latter box'];
 
-  while(input !== 'quit' && input !== 'q') {
-    if(input === 'list') {
-       console.log('sdfgsdg')
-       for (let i = 0; i < todos.length; i++){
-          console.log(`${i} : ${todos[i]}`);
-       }
-       console.log('sdfgsdg')
-    } else if ( input === 'new') {
-        const todosNew = prompt('add a new list');
-        todos.push(todosNew);
-        console.log(`${todosNew} added to new list!`);
-      } else if (input === 'delete') { 
-          const deleteTodo = prompt("enter the delete list");
-          const deletelist = todos.splice(deleteTodo, 1);
-          console.log(`${deletelist[0]} is deleted`);  
-      }
+  // let input = prompt("what do you like to do");
+  // const todos = ['collect chicken eggs', 'clean latter box'];
 
-    input = prompt("what do you like to do") 
-      
-  }
-  console.log("ok you quit app!")
-*/
+  // while(input !== 'quit' && input !== 'q') {
+  //   if(input === 'list') {
+  //      console.log('sdfgsdg')
+  //      for (let i = 0; i < todos.length; i++){
+  //         console.log(`${i} : ${todos[i]}`);
+  //      }
+  //      console.log('sdfgsdg')
+  //   } else if ( input === 'new') {
+  //       const todosNew = prompt('add a new list');
+  //       todos.push(todosNew);
+  //       console.log(`${todosNew} added to new list!`);
+  //     } else if (input === 'delete') { 
+  //         const deleteTodo = prompt("enter the delete list");
+  //         const deletelist = todos.splice(deleteTodo, 1);
+  //         console.log(`${deletelist[0]} is deleted`);  
+  //     }
+
+  //   input = prompt("what do you like to do") 
+  // }
+  // console.log("ok you quit app!")
+
 
 /*
 
@@ -282,26 +281,68 @@ let totalPrice = prices.reduce((total, price) => {
 //     } 
 //}
 
-let studentsMarks = {
-  arun : 88,
-  ram : 89,
-  jarunk: 78,
-  shandtheep : 75,
-  hari :86,
-  bharthi : 65,
-  siva : 75,
-  raj : 97,
-  subhbhu : 98,
-  mathavan : 68,
+            //total & avg
+
+// let studentsMarks = {
+//   arun : 88,
+//   ram : 89,
+//   jarunk: 78,
+//   shandtheep : 75,
+//   hari :86,
+//   bharthi : 65,
+//   siva : 75,
+//   raj : 97,
+//   subhbhu : 98,
+//   mathavan : 68,
+// }
+// let avg = Object.values(studentsMarks);
+// let total = 0 ;
+// for(marks in studentsMarks){
+//   console.log(`${marks} : ${studentsMarks[marks]}`)
+//   total += studentsMarks[marks]; 
+// }
+// console.log(`Total : ${total}`);
+// console.log(`AVG :${total / avg.length}`) 
+
+
+
+
+let input = prompt("what would you like at ")
+let todos = ["hello there","hi there"]
+while(input !== 'quit' && input !== "q") {
+
+  if (input === "list"){
+    for (i = 1; i <= todos.length; i++){
+         console.log(`${i} = ${todos[i]}`);   
+    }
+  } else if(input === "new"){
+    let addlist = prompt("enter your add new Todo list")
+    todos.push(addlist);
+    console.log(`added for : ${addlist}`)
+  } else if(input === "delete"){
+    let deletedlist = parseInt(prompt("enter your deleted list"))
+    if(!Number.isNaN(deletedlist)){
+       let deleted = todos.splice(deletedlist,1)
+       console.log(`ok ${deleted}`);
+    }else{
+      console.log("unkown deleted");
+    }
+  }
+  input = prompt("what would you like at ")
+  
 }
-let avg = Object.values(studentsMarks);
-let total = 0 ;
-for(marks in studentsMarks){
-  console.log(`${marks} : ${studentsMarks[marks]}`)
-  total += studentsMarks[marks]; 
-}
-console.log(`Total : ${total}`);
-console.log(`AVG :${total / avg.length}`) 
+console.log("Ok, you quit")
+
+
+
+
+
+
+
+
+
+
+
 
 
 
