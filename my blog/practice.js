@@ -332,38 +332,77 @@ let totalPrice = prices.reduce((total, price) => {
   
 // }
 // console.log("Ok, you quit")
+                                // call,bind,apply methods
+
+// let details = {
+//   name : "arun",
+//   addition : function(x, y){
+//     return x + y;
+//   },
+//   square (num){
+//     return (num * num );
+//   },
+//   cube (num){
+//     return (num ** 3);
+//   },
+//   callers : function (){
+//     console.log(this.name);
+//   }
+// }
+// details.callers();
+
+// let details2 = {
+//   name : "pandi"
+// }
+
+// details.callers.call(details2);
 
 
-let details = {
-  name : "arun",
-  addition : function(x, y){
-    return x + y;
-  },
-  square (num){
-    return (num * num );
-  },
-  cube (num){
-    return (num ** 3);
-  },
-  callers : function (){
-    console.log(this.name);
-  }
-}
-details.callers();
+                              // for each
 
-let details2 = {
-  name : "pandi"
-}
+const movies = [
+    {
+      tittle : "Amadeus",
+      score : 80
+    },    
+    {
+      tittle : "Stand By Me",
+      score : 90
+    },
+    {
+      tittle : "Parasite",
+      score : 95
+    },
+    {
+      tittle : "Alien",
+      score : 96
+    },
+    {
+      tittle : "Jack Sparrow",
+      score : 85
+    },
+    {
+      tittle : "Scarlet",
+      score : 75
+    }
+]
+movies.forEach(function(movie){
+  console.log(`${movie.tittle} - ${movie.score}/100`);
+})
 
-details.callers.call(details2);
+let newMovies = [];
+let newMoviesList = movies.forEach((items) => {
+  newMovies.push(items); 
+})
 
-
-
-
-
-
-
-
+            //map methods
+let tittles = movies.map(function (movie) {
+    return movie.tittle.toUpperCase();  
+})
+console.log(tittles)
+        
+          // Arrow function
+let rating = movies.map(scores => `${scores.tittle} : ${scores.score/10}`)
 
 
 
