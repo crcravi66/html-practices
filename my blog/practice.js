@@ -404,5 +404,10 @@ console.log(tittles)
           // Arrow function
 let rating = movies.map(scores => `${scores.tittle} : ${scores.score/10}`)
 
+            // filter methods
+let numbers = [2, 21, 12, 5, 8, 53, 7, 35, 4, 6, 9, 1, 6, 79, 56, 42, 35, 75, 62, 64, 85, 3]
+let tryFilter = numbers.filter(elements => elements < 30);
 
-
+let goodMovies = movies.filter(moviegood => moviegood.score > 80);
+let goodMoviesTitels = goodMovies.map(moviegood => moviegood.tittle ); 
+let badMovies = movies.filter(moviegood => moviegood.score < 85); 
