@@ -304,39 +304,58 @@ let totalPrice = prices.reduce((total, price) => {
 // console.log(`Total : ${total}`);
 // console.log(`AVG :${total / avg.length}`) 
 
+                        // practices for whileloop
 
 
+// let input = prompt("what would you like at ")
+// let todos = ["hello there","hi there"]
+// while(input !== 'quit' && input !== "q") {
 
-let input = prompt("what would you like at ")
-let todos = ["hello there","hi there"]
-while(input !== 'quit' && input !== "q") {
-
-  if (input === "list"){
-    for (i = 1; i <= todos.length; i++){
-         console.log(`${i} = ${todos[i]}`);   
-    }
-  } else if(input === "new"){
-    let addlist = prompt("enter your add new Todo list")
-    todos.push(addlist);
-    console.log(`added for : ${addlist}`)
-  } else if(input === "delete"){
-    let deletedlist = parseInt(prompt("enter your deleted list"))
-    if(!Number.isNaN(deletedlist)){
-       let deleted = todos.splice(deletedlist,1)
-       console.log(`ok ${deleted}`);
-    }else{
-      console.log("unkown deleted");
-    }
-  }
-  input = prompt("what would you like at ")
+//   if (input === "list"){
+//     for (i = 1; i <= todos.length; i++){
+//          console.log(`${i} = ${todos[i]}`);   
+//     }
+//   } else if(input === "new"){
+//     let addlist = prompt("enter your add new Todo list")
+//     todos.push(addlist);
+//     console.log(`added for : ${addlist}`)
+//   } else if(input === "delete"){
+//     let deletedlist = parseInt(prompt("enter your deleted list"))
+//     if(!Number.isNaN(deletedlist)){
+//        let deleted = todos.splice(deletedlist,1)
+//        console.log(`ok ${deleted}`);
+//     }else{
+//       console.log("unkown deleted");
+//     }
+//   }
+//   input = prompt("what would you like at ")
   
+// }
+// console.log("Ok, you quit")
+
+
+let details = {
+  name : "arun",
+  addition : function(x, y){
+    return x + y;
+  },
+  square (num){
+    return (num * num );
+  },
+  cube (num){
+    return (num ** 3);
+  },
+  callers : function (){
+    console.log(this.name);
+  }
 }
-console.log("Ok, you quit")
+details.callers();
 
+let details2 = {
+  name : "pandi"
+}
 
-
-
-
+details.callers.call(details2);
 
 
 
