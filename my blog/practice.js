@@ -406,8 +406,46 @@ let rating = movies.map(scores => `${scores.tittle} : ${scores.score/10}`)
 
             // filter methods
 let numbers = [2, 21, 12, 5, 8, 53, 7, 35, 4, 6, 9, 1, 6, 79, 56, 42, 35, 75, 62, 64, 85, 3]
+let users = [{name:'kathir', age:34}, {name:'arun', age:24}, {name:'kumaar', age:25}, {name:'kannan', age:30}]
 let tryFilter = numbers.filter(elements => elements < 30);
 
 let goodMovies = movies.filter(moviegood => moviegood.score > 80);
 let goodMoviesTitels = goodMovies.map(moviegood => moviegood.tittle ); 
 let badMovies = movies.filter(moviegood => moviegood.score < 85); 
+
+          // every & some methods
+let collectEvery = numbers.every(num => num <= 100 )
+let collectSome = numbers.some(num => num >= 50 )
+
+          //reduce value
+numbers.reduce((acc, currVal, currIndex, array) =>{
+  return acc + currVal
+})
+numbers.reduce((acc, currVal, currIndex, array) =>{
+  return acc + currVal
+}, 10)
+users.reduce((acc, currVal, currIndex, array) =>{
+  return currIndex === 1 ? acc.age + currVal.age : acc + currVal.age
+  // return acc.age + currVal.age
+})
+users.reduce((acc, currVal, currIndex, array) =>{
+  return acc + currVal.age
+  
+}, 0)
+users.reduce((acc, currVal, currIndex, array) =>{
+  return  currIndex === 0 ? acc()[0].age + currVal.age : acc + currVal.age
+  
+}, () => [{age:0, name:'test'}])
+const array = [15, 16, 17, 18, 19];
+
+function reducer(accumulator, currentValue, index) {
+  const returns = accumulator + currentValue;
+  console.log(
+    `accumulator: ${accumulator}, currentValue: ${currentValue}, index: ${index}, returns: ${returns}`,
+  );
+  return returns;
+}
+
+array.reduce(reducer);
+
+
